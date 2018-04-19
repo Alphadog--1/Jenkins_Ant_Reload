@@ -5,7 +5,7 @@ public class Rectangle {
 
   public Rectangle(int length, int width){
     this.length=length;
-    this.width=width
+    this.width=width;
     }
   public int getArea(){
     return length * width;
@@ -13,5 +13,5 @@ public class Rectangle {
   public int getPerimeter(){
     return 2 * (length + width);
   }
-  }
-}
+ }
+
