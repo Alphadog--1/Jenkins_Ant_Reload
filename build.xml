@@ -7,6 +7,8 @@
   <property name="src.dir" location="src" />
   <property name="build.dir" location="bin" />
   <property name="dist.dir" location="dist" />
+  <property name="MAJOR_VERSION" value="1" />
+  <property name="BUILD_NUMBER" value="5" />
 
   <path id="class.path">
     <pathelement location="./lib/junit-4.10.jar" />
@@ -34,7 +36,7 @@
 
   <!--Creates the deployable jar file  -->
   <target name="jar" depends="compile">
-    <jar destfile="${dist.dir}\rectangle_${env.MAJOR_VERSION}.${env.BUILD_NUMBER}.jar" basedir="${build.dir}">
+    <jar destfile="${dist.dir}\rectangle_${MAJOR_VERSION}.${BUILD_NUMBER}.jar" basedir="${build.dir}">
       <manifest>
         <attribute name="Main-Class" value="Rectangulator" />
       </manifest>
